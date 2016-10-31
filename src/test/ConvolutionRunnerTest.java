@@ -1,6 +1,6 @@
 package test;
 
-import com.minhaskamal.egami.convolution.ConvolutionRunner;
+import com.minhaskamal.egami.filtering.ConvolutionRunner;
 import com.minhaskamal.egamiLight.Matrix;
 import com.minhaskamal.egamiLight.MatrixUtilities;
 

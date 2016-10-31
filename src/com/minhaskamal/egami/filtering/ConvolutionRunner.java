@@ -6,7 +6,7 @@
 ***********************************************************/
 
 
-package com.minhaskamal.egami.convolution;
+package com.minhaskamal.egami.filtering;
 
 import com.minhaskamal.egamiLight.Matrix;
 import com.minhaskamal.egamiLight.MatrixEditor;

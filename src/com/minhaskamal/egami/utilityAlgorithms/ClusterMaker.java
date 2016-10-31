@@ -1,3 +1,9 @@
+/***********************************************************
+* Developer: Minhas Kamal (minhaskamal024@gmail.com)       *
+* Date: Sep-2016                                           *
+* License: MIT License                                     *
+***********************************************************/
+
 package com.minhaskamal.egami.utilityAlgorithms;
 
 import java.util.ArrayList;
