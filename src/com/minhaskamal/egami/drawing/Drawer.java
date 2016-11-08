@@ -131,12 +131,23 @@ public class Drawer {
 	 */
 	public static Matrix drawLine(Matrix matrix, double m, int c, int[] pixelColor){
 		
-		int y=0;
-		for(int x=0; x<matrix.pixels[0].length; x++){
-			y = (int) (m*x + c);
-			
-			if(y>=0 && y<matrix.pixels.length){
-				matrix.pixels[y][x] = pixelColor;
+		if(m>=-1 && m<=1){
+			int y=0;
+			for(int x=0; x<matrix.pixels[0].length; x++){
+				y = (int) (m*x + c);
+				
+				if(y>=0 && y<matrix.pixels.length){
+					matrix.pixels[y][x] = pixelColor;
+				}
+			}
+		}else{
+			int x=0;
+			for(int y=0; y<matrix.pixels.length; y++){
+				x = (int) ((y-c)/m);
+				
+				if(x>=0 && x<matrix.pixels.length){
+					matrix.pixels[y][x] = pixelColor;
+				}
 			}
 		}
 		
@@ -148,30 +159,41 @@ public class Drawer {
 			double rowGap, double colGap, int numberOfRows, int numberOfCols){
 		
 		return drawGrid(matrix, rowStart, colStart, rowLength, colLength, rowGap, colGap, numberOfRows, numberOfCols,
-				MatrixUtilities.getBlackPixel(matrix));
+				0, 0, MatrixUtilities.getBlackPixel(matrix));
 	}
 	
 	public static Matrix drawGrid(Matrix matrix, int rowStart, int colStart, double rowLength, double colLength,
-			double rowGap, double colGap, int numberOfRows, int numberOfCols, int[] pixelColor){
+			double rowGap, double colGap, int numberOfRows, int numberOfCols, 
+			double rowShift, double colShift, int[] pixelColor){
 		
 		for(int i=0; i<numberOfRows; i++){
+			double rawRow = rowStart + (rowLength+rowGap)*i;
+			
 			for(int j=0; j<numberOfCols; j++){
-				int row = (int) (rowStart + rowLength*i + rowGap*i);
-				int col = (int) (colStart + colLength*j + colGap*j);
+				double rawCol = colStart + (colLength+colGap)*j;
+
+				int row = (int) (rawRow + rawCol*colShift);
+				int col = (int) (rawCol + rawRow*rowShift);
 				
-				//String code = getCode(row, col, rowLength, colLength, connectedPixelGroupPositions);
-				for(int k=1; k<colLength; k++){
-					matrix.pixels[row][k+col] = pixelColor;
-					matrix.pixels[(int) (row+rowLength)][k+col] = pixelColor;
-				}
-				for(int k=0; k<=rowLength; k++){
-					matrix.pixels[k+row][col] = pixelColor;
-					matrix.pixels[k+row][(int) (col+colLength)] = pixelColor;
-				}
+				drawGrid(matrix, row, col, rowLength, colLength, pixelColor);
 			}
 		}
 		
 		return matrix;
 	}
 	
+	public static Matrix drawGrid(Matrix matrix, int row, int col, double rowLength, double colLength,
+			int[] pixelColor){
+		
+		for(int k=1; k<colLength; k++){
+			matrix.pixels[row][k+col] = pixelColor;
+			matrix.pixels[(int) (row+rowLength)][k+col] = pixelColor;
+		}
+		for(int k=0; k<=rowLength; k++){
+			matrix.pixels[k+row][col] = pixelColor;
+			matrix.pixels[k+row][(int) (col+colLength)] = pixelColor;
+		}
+		
+		return matrix;
+	}
 }

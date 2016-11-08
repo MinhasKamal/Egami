@@ -1,6 +1,6 @@
 /***********************************************************
 * Developer: Minhas Kamal (minhaskamal024@gmail.com)       *
-* Modification Date: 04-Oct-2016                           *
+* Date: 04-Oct-2016                                        *
 * License: MIT License                                     *
 ***********************************************************/
 
