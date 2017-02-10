@@ -7,9 +7,9 @@
 package com.minhaskamal.egami.filtering;
 
 import java.util.Arrays;
-import com.minhaskamal.egamiLight.Matrix;
-import com.minhaskamal.egamiLight.MatrixEditor;
-import com.minhaskamal.egamiLight.MatrixUtilities;
+import com.minhaskamal.egami.matrix.Matrix;
+import com.minhaskamal.egami.matrix.MatrixEditor;
+import com.minhaskamal.egami.matrix.MatrixUtilities;
 
 public class MedianFilterRunner {
 	/**

@@ -7,8 +7,8 @@
 package com.minhaskamal.egami.drawing;
 
 import java.util.ArrayList;
-import com.minhaskamal.egamiLight.Matrix;
-import com.minhaskamal.egamiLight.MatrixUtilities;
+import com.minhaskamal.egami.matrix.Matrix;
+import com.minhaskamal.egami.matrix.MatrixUtilities;
 
 public class Drawer {
 	public static final int HORIZONTAL_LINE = 0;

@@ -8,8 +8,8 @@
 
 package com.minhaskamal.egami.filtering;
 
-import com.minhaskamal.egamiLight.Matrix;
-import com.minhaskamal.egamiLight.MatrixEditor;
+import com.minhaskamal.egami.matrix.Matrix;
+import com.minhaskamal.egami.matrix.MatrixEditor;
 
 public class ConvolutionRunner {
 	public static Matrix applyMask(Matrix matrix, double[][] mask, boolean preserveSize) {

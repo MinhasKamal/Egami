@@ -7,8 +7,8 @@
 
 package com.minhaskamal.egami.colorSpaceTransformation;
 
-import com.minhaskamal.egamiLight.Matrix;
-import com.minhaskamal.egamiLight.MatrixTypeConverter;
+import com.minhaskamal.egami.matrix.Matrix;
+import com.minhaskamal.egami.matrix.MatrixTypeConverter;
 
 public class RGBConverter {
 	

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 import com.minhaskamal.egami.connectedComponentAnalysis.ConnectedComponentLabeler;
 import com.minhaskamal.egami.drawing.Drawer;
-import com.minhaskamal.egamiLight.Matrix;
-import com.minhaskamal.egamiLight.MatrixUtilities;
+import com.minhaskamal.egami.matrix.Matrix;
+import com.minhaskamal.egami.matrix.MatrixUtilities;
 
 public class ConnectedComponentLabelerTest extends EgamiTest{
 

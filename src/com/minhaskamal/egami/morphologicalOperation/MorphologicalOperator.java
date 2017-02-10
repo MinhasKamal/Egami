@@ -6,7 +6,7 @@
 
 package com.minhaskamal.egami.morphologicalOperation;
 
-import com.minhaskamal.egamiLight.Matrix;
+import com.minhaskamal.egami.matrix.Matrix;
 
 
 public class MorphologicalOperator {

@@ -7,9 +7,9 @@
 
 package com.minhaskamal.egami.contrastEnhancement;
 
-import com.minhaskamal.egamiLight.Matrix;
-import com.minhaskamal.egamiLight.MatrixTypeConverter;
-import com.minhaskamal.egamiLight.MatrixUtilities;
+import com.minhaskamal.egami.matrix.Matrix;
+import com.minhaskamal.egami.matrix.MatrixTypeConverter;
+import com.minhaskamal.egami.matrix.MatrixUtilities;
 
 public class HistogramEqualizer {
 	

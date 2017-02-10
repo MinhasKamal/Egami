@@ -1,7 +1,7 @@
 package test;
 
 import com.minhaskamal.egami.contrastEnhancement.HistogramEqualizer;
-import com.minhaskamal.egamiLight.Matrix;
+import com.minhaskamal.egami.matrix.Matrix;
 
 public class HistogramEqualizerTest extends EgamiTest{
 

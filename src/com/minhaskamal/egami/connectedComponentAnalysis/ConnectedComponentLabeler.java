@@ -9,9 +9,9 @@ package com.minhaskamal.egami.connectedComponentAnalysis;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-import com.minhaskamal.egamiLight.Matrix;
-import com.minhaskamal.egamiLight.MatrixEditor;
-import com.minhaskamal.egamiLight.MatrixTypeConverter;
+import com.minhaskamal.egami.matrix.Matrix;
+import com.minhaskamal.egami.matrix.MatrixEditor;
+import com.minhaskamal.egami.matrix.MatrixTypeConverter;
 
 public class ConnectedComponentLabeler {
 

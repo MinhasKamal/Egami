@@ -1,8 +1,9 @@
 package test;
 
+import com.minhaskamal.egami.contrastEnhancement.HistogramEqualizer;
 import com.minhaskamal.egami.drawing.Drawer;
-import com.minhaskamal.egamiLight.Matrix;
-import com.minhaskamal.egamiLight.MatrixUtilities;
+import com.minhaskamal.egami.matrix.Matrix;
+import com.minhaskamal.egami.matrix.MatrixUtilities;
 
 public class DrawerTest extends EgamiTest{
 
@@ -12,19 +13,20 @@ public class DrawerTest extends EgamiTest{
 	
 	@Override
 	public void testMethod() throws Exception {
-		Matrix matrix = new Matrix(FRUIT_IMG, Matrix.BLACK_WHITE);
+		Matrix matrix = new Matrix("C:\\Users\\admin\\Desktop\\test\\sample2.png", Matrix.BLACK_WHITE);
+		matrix = HistogramEqualizer.biHistogramEqualizer(matrix);
 		
 		Drawer.drawGrid(matrix, 
-				50, 50, 
-				100, 100, 
-				5, 5, 
-				5, 5,
-				-0.05, 0.05,
+				57, 146, 
+				40, 23, 
+				7.35, 5.9, 
+				27, 28,
+				-0.002, 0.002,
 				MatrixUtilities.getBlackPixel(matrix));
 		
-		Drawer.drawLine(matrix, 50.0, 100, MatrixUtilities.getBlackPixel(matrix));
+		//Drawer.drawLine(matrix, 50.0, 100, MatrixUtilities.getBlackPixel(matrix));
 		
-		matrix.write(DESKTOP+"out.png");		
+		matrix.write("C:\\Users\\admin\\Desktop\\test\\sample2out.png");		
 	}
 
 }

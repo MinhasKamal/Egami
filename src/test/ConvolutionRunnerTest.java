@@ -1,8 +1,8 @@
 package test;
 
 import com.minhaskamal.egami.filtering.ConvolutionRunner;
-import com.minhaskamal.egamiLight.Matrix;
-import com.minhaskamal.egamiLight.MatrixUtilities;
+import com.minhaskamal.egami.matrix.Matrix;
+import com.minhaskamal.egami.matrix.MatrixUtilities;
 
 public class ConvolutionRunnerTest extends EgamiTest{
 

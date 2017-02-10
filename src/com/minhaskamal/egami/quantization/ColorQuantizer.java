@@ -7,8 +7,8 @@ package com.minhaskamal.egami.quantization;
 
 import java.util.LinkedList;
 import java.util.List;
-import com.minhaskamal.egamiLight.Matrix;
-import com.minhaskamal.egamiLight.MatrixTypeConverter;
+import com.minhaskamal.egami.matrix.Matrix;
+import com.minhaskamal.egami.matrix.MatrixTypeConverter;
 
 
 public class ColorQuantizer {
