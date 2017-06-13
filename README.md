@@ -1,10 +1,8 @@
 <h1><img src="https://cloud.githubusercontent.com/assets/5456665/22825566/32aee512-efb8-11e6-989c-184dc53dc29e.png" height=24px width=auto/> Egami</h1>
 
-[![Gitter](https://badges.gitter.im/MinhasKamal/Egami.svg)](https://gitter.im/MinhasKamal/Egami?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
 #### A Light Weight Image Processing Library
 
-[This image processing library](http://minhaskamal.github.io/Egami/) implements various base image processing algorithms, ranging from image enhancement and filtering to feature extraction. It is specially suitable for small projects.
+Implements various base image processing algorithms, ranging from image enhancement and filtering to feature extraction; specially suitable for small projects.
 
 ### Demonstration
 
@@ -18,7 +16,7 @@ There are many things, can be done by Egami-
     <img src="https://cloud.githubusercontent.com/assets/5456665/16490227/84cd7e90-3efa-11e6-9335-e1c9fc0a32c3.png" height="120" width=auto title="Skew by 30 deg"/>
   </div>
   
-Here are some color-space conversions-
+Color-Space Conversions-
   
   <div align="center">
     <img src="https://cloud.githubusercontent.com/assets/5456665/16493934/40edf506-3f09-11e6-971c-5579501b1856.jpg" height="100" width=auto title="Actual Image"/>
@@ -36,6 +34,9 @@ Segmentation-
     <img src="https://cloud.githubusercontent.com/assets/5456665/18299437/a2a59f2e-74e2-11e6-9b5b-b6ce0174feee.png" height="130" width=auto title="K-Means Cluster"/>
     <img src="https://cloud.githubusercontent.com/assets/5456665/18299436/a2a50a32-74e2-11e6-9374-6a84ad9368cb.png" height="130" width=auto title="Mean Shift Cluster"/>
   </div>
+
+### Releases
+- <a href="https://github.com/MinhasKamal/Egami/blob/release/Egami-V0.1.jar?raw=true">Version 0.1</a> - Release Date:  10 Oct 2016
 
 ### License
 <a rel="license" href="https://opensource.org/licenses/MIT"><img alt="MIT License" src="https://cloud.githubusercontent.com/assets/5456665/18950087/fbe0681a-865f-11e6-9552-e59d038d5913.png" width="60em" height=auto/></a><br/><a href="https://github.com/MinhasKamal/Egami">Egami</a> is licensed under <a rel="license" href="https://opensource.org/licenses/MIT">MIT License</a>.
