@@ -4,6 +4,37 @@
 
 Implements various base image processing algorithms, ranging from image enhancement and filtering to feature extraction; specially suitable for small projects.
 
+### How to Use?
+
+1. Download [Egami.jar](https://github.com/MinhasKamal/Egami/blob/release/Egami-V0.1.jar?raw=true), and [integrate](https://stackoverflow.com/a/3280451/4684058) it in your project's build path.
+2. Here is a simple demonstration-
+
+```
+	public static void main(String[] args) {
+		String desktop =  System.getenv("SystemDrive") + System.getenv("HOMEPATH") + "\\Desktop\\";
+		String inputImageFilePath = desktop + "in.png";
+		String outputImageFilePath = desktop + "out.png";
+		
+		// Reading input image. 
+		// Matrix is the class that contains the whole image object.
+		// Here we are sending the image file path and image type for
+		// loading the image.
+		System.out.println("Reading...");
+		Matrix matrix = new Matrix(inputImageFilePath, Matrix.BLACK_WHITE);
+		
+		// Here we are running a filter on the input image. The filter
+		// will detect edge of the input image.
+		System.out.println("Filtering...");
+		matrix = ConvolutionRunner.applyMask(matrix, ConvolutionRunner.getEdgeFilter(), true);
+		
+		// Writing output image on the disk.
+		System.out.println("Writing...");
+		matrix.write(outputImageFilePath);
+	}
+```
+
+You will find some simple implementations in the [test](https://github.com/MinhasKamal/Egami/tree/master/src/test) section. You will also get a nice insight of the project from- [AlphabetRecognizer](https://github.com/MinhasKamal/AlphabetRecognizer) and [DeepGenderRecognizer](https://github.com/MinhasKamal/DeepGenderRecognizer), which are built with Egami.
+
 ### Demonstration
 
 There are many things, can be done by Egami-
